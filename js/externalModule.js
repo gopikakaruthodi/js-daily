@@ -46,3 +46,15 @@ export function emailValidation(credit){
 
 }
 
+export function passwordValidation(credit){
+    let regEx=/^[a-z,A-Z,0-9,@,#,$,%,^,&,*,\.]/
+    if(regEx.test(credit)){
+        return `<span class="smsg">Success</span>`
+    }
+    else{
+        return `<span class="emsg">Not Valid</span>`
+    }
+
+
+}
+
